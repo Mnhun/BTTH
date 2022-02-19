@@ -1,57 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Image Slider</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="main.css">
 </head>
-<div class="slider">
+<body>
+  <div class="slider">
     <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio1" />
+      <input type="radio" name="radio-btn" id="radio2" />
+      <input type="radio" name="radio-btn" id="radio3" />
+      <input type="radio" name="radio-btn" id="radio4" />
 
-        <div class="slide first">
-            <img src="1.jpg" alt="">
-        </div>
+      <div class="slide first">
+        <img src="https://scontent.fhph2-1.fna.fbcdn.net/v/t39.30808-6/267144121_598638994726271_8266286522376139985_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_ohc=Z7AGCIQNwgEAX8WlcB4&_nc_ht=scontent.fhph2-1.fna&oh=00_AT8yih2zvnQ5d35NGdIDUCP7fHGkL44MtignZzGNxVrJ7Q&oe=621576DD" alt="" />
+      </div>
+      <div class="slide">
+        <img src="https://scontent.fhph1-3.fna.fbcdn.net/v/t1.6435-9/129900040_381961366394036_5958104903826634954_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=19026a&_nc_ohc=3VnTTbMbxCQAX-gcTJj&_nc_ht=scontent.fhph1-3.fna&oh=00_AT8k7jmQxESGGuNGf5QFS4THUPycyHQv5nCkG9rua1_mvQ&oe=623549F0" alt="" />
+      </div>
+      <div class="slide">
+        <img src="https://scontent.fhph1-3.fna.fbcdn.net/v/t39.30808-1/248297725_575887780334726_6606529220325715091_n.jpg?stp=dst-jpg_p240x240&_nc_cat=103&ccb=1-5&_nc_sid=7206a8&_nc_ohc=cKWFdloD0wEAX9vJHX4&_nc_ht=scontent.fhph1-3.fna&oh=00_AT8BANsEzhOGANXqTXYy_B45nPDa8FmD5VYGM03LTMw5eQ&oe=62166546"alt=""/>
+      </div>
+      <div class="slide">
+        <img src="https://scontent.fhph1-2.fna.fbcdn.net/v/t39.30808-6/271280940_612142203375950_7571344472667239865_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=kdGHtxW5wEUAX_111i4&_nc_ht=scontent.fhph1-2.fna&oh=00_AT_6kUMMp0VpHgOE-RVqBxrBFDqi7A1cNy5eqrjKJMvPlA&oe=62164E8E" alt="" />
+      </div>
 
-        <div class="slide">
-            <img src="2.jpg" alt="">
-        </div>
-
-        <div class="slide">
-            <img src="3.jpg" alt="">
-        </div>
-
-        <div class="slide">
-            <img src="4.jpg" alt="">
-        </div>
-
-        <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-        </div>
-
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
     </div>
     <div class="navigation-manual">
-        <label for="radio1" class="maunual-btn"></label>
-        <label for="radio2" class="maunual-btn"></label>
-        <label for="radio3" class="maunual-btn"></label>
-        <label for="radio4" class="maunual-btn"></label>   
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
     </div>
-    <script type="text/javascript">
-        var counter =1;
-        setInterval(function(){
-            document.getElementById('radio'+ counter).checked = true;
-            counter++;
-            if(counter>4){
-                counter = 1;
-            }
-        },2000); 
-    </script>
-</div>
+  </div>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' +counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 3500);
+  </script>
+</body>
 </html>
